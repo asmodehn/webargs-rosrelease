@@ -22,7 +22,7 @@
 
   <depend version_gte="2.0.0">marshmallow</depend>
 
-  <test_depend version_gte="2.0.18">python-webtest</test_depend>  <!-- 2.0.18 built on indigo since trusty version is too old -->
+  <test_depend version_gte="2.0.18">webtest</test_depend>  <!-- 2.0.18 built on indigo since trusty version is too old, also on kinetic to upgrade old version on debian -->
   <test_depend version_gte="0.9.4">python-werkzeug</test_depend>
 
   <test_depend>python-pytest</test_depend>
@@ -32,7 +32,7 @@
   <!-- <test_depend version_gte="0.3.0">python-falcon</test_depend> -->
   <test_depend version_gte="0.10.1">python-flask</test_depend>
   <!-- <test_depend version_gte="1.5.2">python-pyramid</test_depend> -->
-  <test_depend version_gte="4.0">python-tornado</test_depend>  <!-- using 4.2.1 from system since wily and xenial versions are ok -->
+  <test_depend version_gte="4.0">python-tornado</test_depend>  <!-- using 4.2.1 from system since wily and xenial versions are ok. dropping debian for this as porting tornado properly is heavy work. -->
   <!-- Temporary disabling django tests
   <test_depend version_gte="1.6.5">django</test_depend> --> <!-- using 1.8.7 built on indigo since trusty version is too old -->
 
